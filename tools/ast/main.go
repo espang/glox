@@ -40,8 +40,6 @@ func defineAST(outputDir string, asts ...string) error {
 		}
 	}
 
-	_ = targetFile
-
 	targetFile.WriteString("package parser")
 	targetFile.WriteString("\n")
 	targetFile.WriteString("import (")
